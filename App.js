@@ -24,7 +24,7 @@ export default function App() {
       <Switch  
         trackColor={{ false: "#767577", true: "FA7070" }}
         thumbColor={isDarkMode ? "#000" : "#fff"}
-        onValueChange={() => setIsDarkMode(!isDarkMode)}
+        onValueChange={() => setIsDarkMode((prev) => !prev)}
         value={isDarkMode}
         />
     </View>
